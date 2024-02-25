@@ -4,7 +4,7 @@ public class Control {
     private TV tv;
 
     public Control(TV tv) {
-        this.tv = tv;
+        this.tv = null;
     }
 
     public void turnOn() {
@@ -39,5 +39,15 @@ public class Control {
         }
     }
 
-    
+    public void setCanal(int canal) {
+        if (tv.getEstado() && canal >= 1 && canal <= 120) {
+            tv.setCanal(canal);
+        }
+    }
+
+    public void setVolumen(int volumen) {
+        if (tv.getEstado() && volumen >= 0 && volumen <= 7) {
+            tv.setVolumen(volumen);
+        }
+    }
 }
