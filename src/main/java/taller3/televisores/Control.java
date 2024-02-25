@@ -26,4 +26,18 @@ public class Control {
             tv.setCanal(tv.getCanal() - 1);
         }
     }
+
+    public void volumenUp() {
+        if (tv.getEstado() && tv.getVolumen() < 7) {
+            tv.setVolumen(tv.getVolumen() + 1);
+        }
+    }
+
+    public void volumenDown() {
+        if (tv.getEstado() && tv.getVolumen() > 0) {
+            tv.setVolumen(tv.getVolumen() - 1);
+        }
+    }
+
+    
 }
