@@ -79,4 +79,8 @@ public class TV {
         estado = false;
         System.out.println("El televisor esta apagado.");
     }
+
+    public boolean getEstado() {
+        return estado;
+    }
 }
