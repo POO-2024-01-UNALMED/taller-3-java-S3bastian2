@@ -14,4 +14,16 @@ public class Control {
     public void turnOff() {
         tv.setEstado(false);
     }
+
+    public void canalUp() {
+        if (tv.getEstado() && tv.getCanal() < 120) {
+            tv.setCanal(tv.getCanal() + 1);
+        }
+    }
+
+    public void canalDown() {
+        if (tv.getEstado() && tv.getCanal() > 1) {
+            tv.setCanal(tv.getCanal() - 1);
+        }
+    }
 }
