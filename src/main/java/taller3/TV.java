@@ -7,6 +7,7 @@ public class TV {
     private boolean estado;
     private int volumen;
     private Control control;
+    private static int numTV = 0;
 
     public TV(Marca marca, boolean estado) {
         this.marca = marca;
@@ -14,6 +15,7 @@ public class TV {
         this.canal = 1;
         this. volumen = 1;
         this.precio = 500;
+        TV.numTV++;
     }
 
     public String estadoToString() {
@@ -62,6 +64,10 @@ public class TV {
 
     public Control getControl() {
         return control;
+    }
+
+    public static int getNumTV() {
+        return numTV;
     }
 
 }
