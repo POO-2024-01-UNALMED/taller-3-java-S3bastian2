@@ -4,7 +4,7 @@ public class Control {
     private TV tv;
 
     public Control(TV tv) {
-        this.tv = null;
+        this.tv = tv;
     }
 
     public void turnOn() {
