@@ -50,4 +50,11 @@ public class Control {
             tv.setVolumen(volumen);
         }
     }
+
+    public void enlazar(TV televisor) {
+        this.tv = televisor;
+        if (televisor != null) {
+            televisor.setControl(this);
+        }
+    }
 }
