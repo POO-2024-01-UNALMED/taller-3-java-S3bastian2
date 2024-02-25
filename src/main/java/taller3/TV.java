@@ -32,4 +32,36 @@ public class TV {
         return marca; 
     }
 
+    public void setCanal(int canal) {
+        this.canal = canal;
+    }
+
+    public int getCanal() {
+        return canal;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
+
+    public int getPrecio() {
+        return precio;
+    }
+
+    public void setVolumen(int volumen) {
+        this.volumen = volumen;
+    }
+
+    public int getVolumen() {
+        return volumen;
+    }
+
+    public void setControl(Control control) {
+        this.control = control;
+    }
+
+    public Control getControl() {
+        return control;
+    }
+
 }
