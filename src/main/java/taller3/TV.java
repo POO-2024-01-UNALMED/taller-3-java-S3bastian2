@@ -70,4 +70,13 @@ public class TV {
         return numTV;
     }
 
+    public void turnOn() {
+        estado = true;
+        System.out.println("El televisor esta encendido.");
+    }
+
+    public void turnOff() {
+        estado = false;
+        System.out.println("El televisor esta apagado.");
+    }
 }
