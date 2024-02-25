@@ -1,4 +1,4 @@
-package taller3;
+package taller3.televisores;
 
 public class TV {
     private Marca marca;
@@ -83,4 +83,5 @@ public class TV {
     public boolean getEstado() {
         return estado;
     }
+
 }
