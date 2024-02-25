@@ -57,4 +57,15 @@ public class Control {
             televisor.setControl(this);
         }
     }
+
+    public TV getTv() {
+        return tv; 
+    }
+
+    public void setTv(TV tv) {
+        this.tv = tv;
+        if (tv != null) {
+            tv.setControl(this);
+        }
+    }
 }
