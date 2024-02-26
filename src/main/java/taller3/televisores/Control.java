@@ -51,13 +51,6 @@ public class Control {
         }
     }
 
-    public void enlazar(TV televisor) {
-        this.tv = televisor;
-        if (televisor != null) {
-            televisor.setControl(this);
-        }
-    }
-
     public TV getTv() {
         return tv; 
     }
