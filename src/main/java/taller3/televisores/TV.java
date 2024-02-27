@@ -88,6 +88,14 @@ public class TV {
         System.out.println("El televisor esta apagado.");
     }
 
+    public void canalUp() {
+        if (this.estado) {
+            if (this.canal < 120) {
+                this.canal++;
+            }
+        }
+    }
+
     public boolean getEstado() {
         return estado;
     }
@@ -96,11 +104,4 @@ public class TV {
         this.estado = estado;
     }
 
-    public void canalUp() {
-        if (this.estado) {
-            if (this.canal < 120) {
-                this.canal++;
-            }
-        }
-    }
 }
