@@ -96,6 +96,14 @@ public class TV {
         }
     }
 
+    public void canalDown() {
+        if (this.estado) {
+            if (this.canal > 1) {
+                this.canal--;
+            }
+        }
+    }
+
     public boolean getEstado() {
         return estado;
     }
