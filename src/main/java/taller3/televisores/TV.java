@@ -95,4 +95,12 @@ public class TV {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
+
+    public void canalUp() {
+        if (this.estado) {
+            if (this.canal < 120) {
+                this.canal++;
+            }
+        }
+    }
 }
