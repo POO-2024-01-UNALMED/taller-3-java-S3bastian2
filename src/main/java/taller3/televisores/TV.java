@@ -104,6 +104,22 @@ public class TV {
         }
     }
 
+    public void volumenUp() {
+        if (this.estado) {
+            if (this.volumen < 7) {
+                this.volumen++;
+            }
+        }
+    }
+
+    public void volumenDown() {
+        if (this.estado) {
+            if (this.volumen > 0) {
+                this.volumen--;
+            }
+        }
+    }
+
     public boolean getEstado() {
         return estado;
     }
