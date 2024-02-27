@@ -40,12 +40,12 @@ public class Control {
         tv.volumenDown();
     }
 
-    public void setCanal() {
-        tv.setCanal(0);
+    public void setCanal(int canal) {
+        this.tv.setCanal(canal);
     }
 
-    public void setVolumen() {
-        tv.setVolumen(0);
+    public void setVolumen(int volumen) {
+        this.tv.setVolumen(volumen);
     }
         
 
