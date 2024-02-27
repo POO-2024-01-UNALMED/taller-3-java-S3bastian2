@@ -40,16 +40,13 @@ public class Control {
         tv.volumenDown();
     }
 
-    public void setCanal(int canal) {
-        if (tv.getEstado() && canal >= 1 && canal <= 120) {
-            tv.setCanal(canal);
-        }
+    public void setCanal() {
+        tv.setCanal(0);
     }
 
-    public void setVolumen(int volumen) {
-        if (tv.getEstado() && volumen >= 0 && volumen <= 7) {
-            tv.setVolumen(volumen);
-        }
+    public void setVolumen() {
+        tv.setVolumen(0);
     }
+        
 
 }
